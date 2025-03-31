@@ -1,0 +1,9 @@
+com\exemplo\controller\IndexController.class
+com\exemplo\config\PessoaConfig.class
+com\exemplo\MeuProjetoSpringbootApplication.class
+com\exemplo\model\DogResponse.class
+com\exemplo\config\RestTemplateConfig.class
+com\exemplo\model\Pessoa.class
+com\exemplo\config\WebConfig.class
+com\exemplo\controller\InfoController.class
+com\exemplo\controller\PessoaController.class
