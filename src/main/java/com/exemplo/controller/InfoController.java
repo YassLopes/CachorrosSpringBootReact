@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@CrossOrigin(origins = {"https://springbootcachorrosreact.onrender.com", "http://localhost:3000"})
+@CrossOrigin(origins = {"https://cachorrosspringbootreact.onrender.com", "http://localhost:3000"})
 @RestController
 @RequestMapping("/info")
 public class InfoController {
