@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
 
-
+  // URL do backend baseada no ambiente
   const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
 
   useEffect(() => {
@@ -17,7 +17,9 @@ function App() {
   const fetchDogImage = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${backendUrl}/info`);
+      // Usando um ID aleatório (1-100) para a API
+      const randomId = Math.floor(Math.random() * 100) + 1;
+      const response = await fetch(`${backendUrl}/info/${randomId}`);
       if (!response.ok) {
         throw new Error('Erro ao buscar imagem do cachorro');
       }
