@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState<string>('');
 
   // URL do backend baseada no ambiente
-  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'https://cachorrosspringbootreact.onrender.com';
 
   useEffect(() => {
     fetchDogImage();
